@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="hi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b0b0b">
+  <title>SK Satta | रिजल्ट जानकारी</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#"><span class="brand-mark">SK</span><span>SK <b>SATTA</b><small>रिजल्ट जानकारी पोर्टल</small></span></a>
+    <nav><a href="#today">आज की जानकारी</a><a href="#history">पुराना रिकॉर्ड</a><a href="#about">हमारे बारे में</a></nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="eyebrow"><span class="dot"></span> सार्वजनिक जानकारी पोर्टल</div>
+      <h1>SK <span>SATTA</span></h1>
+      <p>रिजल्ट जानकारी और पुराने रिकॉर्ड — सरल, साफ़ और मोबाइल के लिए तैयार।</p>
+      <a class="primary-btn" href="#history">पुराना रिकॉर्ड देखें <span>↓</span></a>
+    </section>
+
+    <section id="today" class="section">
+      <div class="section-head"><div><p class="kicker">LATEST UPDATE</p><h2>आज की जानकारी</h2></div><span id="todayDate" class="date-pill">तारीख लोड हो रही है…</span></div>
+      <div class="notice">यह पेज केवल सार्वजनिक जानकारी और रिकॉर्ड दिखाने के लिए है। यहाँ दाँव, भुगतान या पैसे जमा करने की सुविधा नहीं है।</div>
+      <div id="latestCard" class="latest-card">
+        <div><span class="muted-label">नवीनतम रिकॉर्ड</span><h3>अभी कोई रिकॉर्ड उपलब्ध नहीं</h3><p>प्रकाशित रिकॉर्ड यहाँ दिखाई देंगे।</p></div>
+        <span class="result-badge">—</span>
+      </div>
+    </section>
+
+    <section id="history" class="section">
+      <div class="section-head"><div><p class="kicker">ARCHIVE</p><h2>पुराने रिकॉर्ड</h2></div></div>
+      <div class="toolbar"><input id="searchInput" type="search" placeholder="तारीख या विवरण खोजें…" aria-label="रिकॉर्ड खोजें"><button id="clearSearch" class="secondary-btn">साफ़ करें</button></div>
+      <div class="table-wrap">
+        <table><thead><tr><th>तारीख</th><th>शीर्षक</th><th>रिजल्ट / जानकारी</th><th>नोट</th></tr></thead><tbody id="recordsBody"><tr><td colspan="4" class="empty">अभी कोई सार्वजनिक रिकॉर्ड नहीं है।</td></tr></tbody></table>
+      </div>
+      <p class="footnote">रिकॉर्ड केवल जानकारी के उद्देश्य से प्रदर्शित किए जाते हैं। प्रकाशित जानकारी की स्वतंत्र पुष्टि कर लें।</p>
+    </section>
+
+    <section id="about" class="section about">
+      <p class="kicker">ABOUT THIS SITE</p><h2>जानकारी, साफ़ तरीके से।</h2>
+      <p>SK Satta एक जानकारी पोर्टल का शुरुआती नमूना है। वास्तविक उपयोग से पहले एडमिन लॉगिन, डेटाबेस और सुरक्षा सेटअप करना ज़रूरी है।</p>
+    </section>
+
+    <section class="admin-preview section">
+      <div class="section-head"><div><p class="kicker">ADMIN AREA</p><h2>एडमिन पैनल का नमूना</h2></div><span class="status">डेमो</span></div>
+      <div class="notice warning">यह केवल डिज़ाइन प्रीव्यू है। इस फाइल में असली लॉगिन या सर्वर सुरक्षा नहीं है। इसे सार्वजनिक वेबसाइट पर सुरक्षित एडमिन पैनल की तरह इस्तेमाल न करें।</div>
+      <form id="demoForm" class="admin-form">
+        <label>तारीख<input id="recordDate" type="date" required></label>
+        <label>शीर्षक<input id="recordTitle" type="text" maxlength="60" placeholder="उदाहरण: दैनिक अपडेट" required></label>
+        <label>रिजल्ट / सार्वजनिक जानकारी<input id="recordValue" type="text" maxlength="80" placeholder="जानकारी दर्ज करें" required></label>
+        <label>नोट (वैकल्पिक)<input id="recordNote" type="text" maxlength="120" placeholder="अतिरिक्त विवरण"></label>
+        <button class="primary-btn" type="submit">इस ब्राउज़र में डेमो रिकॉर्ड जोड़ें</button>
+        <p id="formMessage" class="form-message" role="status"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer><span>© <span id="year"></span> SK Satta</span><span>जानकारी पोर्टल · ब्लैक & गोल्ड</span></footer>
+  <script src="app.js"></script>
+</body>
+</html>
